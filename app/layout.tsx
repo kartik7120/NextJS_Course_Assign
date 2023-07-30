@@ -1,3 +1,4 @@
+import NavBar from '@/components/NavBar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -16,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={{
+        background: "linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%)"
+      }}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }
