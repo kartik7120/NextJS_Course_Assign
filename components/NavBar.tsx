@@ -1,13 +1,25 @@
+"use client";
 import Image from "next/image";
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 export default function NavBar() {
+
+    const router = useRouter();
+
+    useEffect(() => {
+        router.prefetch("/courses")
+    }, [router])
+
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <Link href="/" className="btn btn-ghost normal-case text-xl">Fireship</Link>
             </div>
             <div className="flex-none gap-2">
-                <button className="btn font-bold text-white hover:text-orange-600 hover:cursor-pointer hover:scale-110 duration-100">courses</button>
+                <button onClick={() => {
+                    router.push("/courses")
+                }} className="btn font-bold text-white hover:text-orange-600 hover:cursor-pointer hover:scale-110 duration-100">courses</button>
                 <div className="form-control">
                     <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
                 </div>

@@ -108,7 +108,7 @@ export default function Home() {
         <p className='text-5xl text-gray3 px-4 text-center'>
           There&apos;s tons of free content here, so <span className='animate-pulse text-yellow-600 font-bold'> play </span>around before you upgrade
         </p>
-        <p className='mt-10 animate-bounce text-3xl block text-center'>every course starts free, try it out 🚀</p>
+        <Link href="/courses"> <p className='mt-10 animate-bounce text-3xl block text-center'>every course starts free, try it out 🚀</p></Link>
       </div>
     </main>
   )

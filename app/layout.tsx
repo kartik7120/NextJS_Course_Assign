@@ -20,7 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={nunito.className} style={{
         background: "linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%)",
-        minHeight: "100vh"
+        minHeight: "100vh",
+        scrollBehavior: "smooth"
       }}>
         <NavBar />
         {children}
