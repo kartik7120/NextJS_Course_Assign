@@ -7,7 +7,7 @@ export default function NavBar() {
                 <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
             </div>
             <div className="flex-none gap-2">
-                <p className="text-lg font-bold text-white hover:text-orange-600 hover:cursor-pointer hover:scale-110 duration-100">courses</p>
+                <button className="btn font-bold text-white hover:text-orange-600 hover:cursor-pointer hover:scale-110 duration-100">courses</button>
                 <div className="form-control">
                     <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
                 </div>
