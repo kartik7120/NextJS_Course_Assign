@@ -35,8 +35,7 @@ export default function NavBar() {
                                 <span className="badge">New</span>
                             </a>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li><Link href="/login">Login</Link></li>
                     </ul>
                 </div>
             </div>
